@@ -1,12 +1,10 @@
 #Single Unit Linked List
-
 class Element(object):
     def __init__(self, value):
         self.value = value
         self.next = None
 
 #Linked List Class
-
 class LinkedList(object):
     def __init__(self, head=None):
         self.head = head
@@ -21,12 +19,9 @@ class LinkedList(object):
             current.next = new_element
         else:
             self.head = new_element
-    
-    
 
 #Test Cases
 #Setting up some elements
-
 e0 = Element(0)
 e1 = Element(1)
 e2 = Element(2)
