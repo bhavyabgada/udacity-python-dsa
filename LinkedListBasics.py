@@ -2,7 +2,7 @@
 
 class Element(object):
     def __init__(self, value):
-        self.value = 'value'
+        self.value = value
         self.next = None
 
 #Linked List Class
@@ -22,4 +22,28 @@ class LinkedList(object):
         else:
             self.head = new_element
     
+    
+
+#Test Cases
+#Setting up some elements
+
+e0 = Element(0)
+e1 = Element(1)
+e2 = Element(2)
+e3 = Element(3)
+e4 = Element(4)
+
+#Setting up the linked list
+ll = LinkedList(e0)
+ll.append(e1)
+ll.append(e2)
+ll.append(e3)
+ll.append(e4)
+
+#Printing values manually to check
+print(ll.head.value)
+print(ll.head.next.value)
+print(ll.head.next.next.value)
+print(ll.head.next.next.next.value)
+print(ll.head.next.next.next.next.value)
 
