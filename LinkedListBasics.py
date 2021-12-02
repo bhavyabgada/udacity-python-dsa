@@ -40,10 +40,16 @@ ll.append(e2)
 ll.append(e3)
 ll.append(e4)
 
-#Printing values manually to check
-print(ll.head.value)
-print(ll.head.next.value)
-print(ll.head.next.next.value)
-print(ll.head.next.next.next.value)
-print(ll.head.next.next.next.next.value)
+#function to print the linked list {expectedOutput : 0 ==> 1 ==> 2 ==> 3 ==> 4}
+def printing(ll):
+    if ll.head == None:
+        return 'Linked List is Empty.'
+    else:
+        current = ll.head
+        while current.next:
+            print(current.value, end=' ==> ')
+            current = current.next
+        print(current.value)
 
+#testing the printing function.
+printing(ll)
