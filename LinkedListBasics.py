@@ -60,3 +60,6 @@ def printing(ll):
 
 #testing the printing function.
 printing(ll)
+
+#testing getposition
+print(ll.get_position(3).value)
